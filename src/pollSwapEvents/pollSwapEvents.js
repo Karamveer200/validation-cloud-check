@@ -16,7 +16,7 @@ const pollSwapEvents = async () => {
     const abiInterfaces = new ethers.Interface(abi.abi);
 
     const filter = {
-        // address: "0x1E375f8947DfFeE57C7713F3176B01858BFBA104", // Filter address of EVM PAIR pool on SaucerSwap
+        address: "0x1E375f8947DfFeE57C7713F3176B01858BFBA104", // Filter address of JUNE17Test/ HBAR pair pool on SaucerSwap
         topics: [abiInterfaces.getEvent("Swap").topicHash], //topic0 filter
     };
 
